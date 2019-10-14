@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		FF7C1FBA234D679600D55A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7C1FB9234D679600D55A32 /* Assets.xcassets */; };
 		FF7C1FBD234D679600D55A32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7C1FBC234D679600D55A32 /* Preview Assets.xcassets */; };
 		FF7C1FC0234D679600D55A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7C1FBE234D679600D55A32 /* LaunchScreen.storyboard */; };
+		FF7C1FC9234D67C400D55A32 /* PackageTest in Frameworks */ = {isa = PBXBuildFile; productRef = FF7C1FC8234D67C400D55A32 /* PackageTest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7C1FC9234D67C400D55A32 /* PackageTest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = PackageTestApp;
+			packageProductDependencies = (
+				FF7C1FC8234D67C400D55A32 /* PackageTest */,
+			);
 			productName = PackageTestApp;
 			productReference = FF7C1FB0234D679400D55A32 /* PackageTestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = FF7C1FA7234D679400D55A32;
+			packageReferences = (
+				FF7C1FC7234D67C400D55A32 /* XCRemoteSwiftPackageReference "PackageTest" */,
+			);
 			productRefGroup = FF7C1FB1234D679400D55A32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF7C1FC7234D67C400D55A32 /* XCRemoteSwiftPackageReference "PackageTest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mpdifran/PackageTest.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF7C1FC8234D67C400D55A32 /* PackageTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF7C1FC7234D67C400D55A32 /* XCRemoteSwiftPackageReference "PackageTest" */;
+			productName = PackageTest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FF7C1FA8234D679400D55A32 /* Project object */;
 }
