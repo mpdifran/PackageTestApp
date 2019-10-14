@@ -1,0 +1,13 @@
+//
+//  Staging.xcconfig
+//  PackageTestApp
+//
+//  Created by Mark DiFranco on 2019-10-14.
+//  Copyright © 2019 Mark DiFranco. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PTA_BUNDLE_ID = com.mdfprojects.PackageTestApp.staging
+PTA_APP_NAME = "SPM Staging"
